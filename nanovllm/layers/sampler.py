@@ -1,7 +1,10 @@
 import torch
 from torch import nn
 
-
+# 采样方法:
+# 使用 Gumbel-max 而不是 multinomial
+# clamp_min_ 防止除 0
+# 禁止 temperature 为 0 为了简化
 class Sampler(nn.Module):
 
     @torch.compile

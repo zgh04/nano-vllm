@@ -1,0 +1,2 @@
+#1. scheduler的schedule方法会分为prefill和decode两个处理阶段，并且每次只会处理一种，为什么?  以及为什么prefill优先于decode?
+#2. scheduler的postprocess后处理主要做什么事情?
